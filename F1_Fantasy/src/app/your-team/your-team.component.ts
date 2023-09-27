@@ -1,4 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { TeamService } from '../services/team.service';
+import { SelectedDriverInterface } from '../interfaces/selectedDriver-interface';
 
 @Component({
   selector: 'app-your-team',
@@ -7,7 +9,8 @@ import { Component, Input } from '@angular/core';
 })
 export class YourTeamComponent {
 
-@Input() pickedDrivers:any[]=[];
+  constructor(private team:TeamService){}
 
+  userTeam:SelectedDriverInterface[] = this.team.getPickedDrivers()
 
 }

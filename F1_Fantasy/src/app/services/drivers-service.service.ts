@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { DriversInterface } from './drivers-interface';
+import { Injectable} from '@angular/core';
+import { DriversInterface } from '../interfaces/drivers-interface';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +9,7 @@ export class DriversServiceService {
 
   Verstappen:DriversInterface = {
     name: 'Max Verstappen',
+    id: 'VER' ,
     driver_num: 1,
     country: '',
     team: 'Red Bull Racing',
@@ -22,6 +23,7 @@ export class DriversServiceService {
   }
   Perez:DriversInterface = {
     name: 'Sergio Pérez',
+    id: 'PER' ,
     driver_num: 11,
     country: '',
     team: 'Red Bull Racing',
@@ -34,6 +36,7 @@ export class DriversServiceService {
   }
   Leclerc:DriversInterface = {
     name: 'Charles Leclerc',
+    id: 'LEC' ,
     driver_num: 16,
     country: '',
     team: 'Ferrari',
@@ -46,6 +49,7 @@ export class DriversServiceService {
   }
   Sainz:DriversInterface = {
     name: 'Carlos Sainz',
+    id: 'SAI' ,
     driver_num: 55,
     country: '',
     team: 'Ferrari',
@@ -58,6 +62,7 @@ export class DriversServiceService {
   }
   Hamilton:DriversInterface = {
     name: 'Lewis Hamilton',
+    id: 'HAM' ,
     driver_num: 44,
     country: '',
     team: 'Mercedes',
@@ -71,6 +76,7 @@ export class DriversServiceService {
   }
   Russell:DriversInterface = {
     name: 'George Russell',
+    id: 'RUS' ,
     driver_num: 63,
     country: '',
     team: 'Mercedes',
@@ -83,6 +89,7 @@ export class DriversServiceService {
   }
   Alonso:DriversInterface = {
     name: 'Fernando Alonso',
+    id: 'ALO' ,
     driver_num: 14,
     country: '',
     team: 'Aston Martin',
@@ -96,6 +103,7 @@ export class DriversServiceService {
   }
   Stroll:DriversInterface = {
     name: 'Lance Stroll',
+    id: 'STR' ,
     driver_num: 63,
     country: '',
     team: 'Aston Martin',
@@ -107,6 +115,7 @@ export class DriversServiceService {
   }
   Ocon:DriversInterface = {
     name: 'Esteban Ocon',
+    id: 'OCO' ,
     driver_num: 31,
     country: '',
     team: 'Alpine',
@@ -118,6 +127,7 @@ export class DriversServiceService {
   }
   Gasly:DriversInterface = {
     name: 'Pierre Gasly',
+    id: 'GAS' ,
     driver_num: 10,
     country: '',
     team: 'Alpine',
@@ -129,6 +139,7 @@ export class DriversServiceService {
   }
   Norris:DriversInterface = {
     name: 'Lando Norris',
+    id: 'NOR' ,
     driver_num: 4,
     country: '',
     team: 'McLaren',
@@ -140,6 +151,7 @@ export class DriversServiceService {
   }
   Piastri:DriversInterface = {
     name: 'Oscar Piastri',
+    id: 'PIA' ,
     driver_num: 81,
     country: '',
     team: 'McLaren',
@@ -150,6 +162,7 @@ export class DriversServiceService {
   }
   Zhou:DriversInterface = {
     name: 'Guanyu Zhou',
+    id: 'ZHO' ,
     driver_num: 24,
     country: '',
     team: 'Alpha Romeo',
@@ -159,6 +172,7 @@ export class DriversServiceService {
   }
   Bottas:DriversInterface = {
     name: 'Valtery Bottas',
+    id: 'BOT' ,
     driver_num: 77,
     country: '',
     team: 'Alpha Romeo',
@@ -171,9 +185,10 @@ export class DriversServiceService {
   }
   Albon:DriversInterface = {
     name: 'Alexander Albon',
+    id: 'ALB' ,
     driver_num: 23,
     country: '',
-    team: 'Alpha Romeo',
+    team: 'Williams',
     team_img: '',
     img: '',
     f1_champion: false,
@@ -181,15 +196,17 @@ export class DriversServiceService {
   }
   Sargeant:DriversInterface = {
     name: 'Logan Sargeant',
+    id: 'SAR' ,
     driver_num: 2,
     country: '',
-    team: 'Alpha Romeo',
+    team: 'Williams',
     team_img: '',
     img: '',
     f1_champion: false
   }
   Tsunoda:DriversInterface = {
     name: 'Yuki Tsunoda',
+    id: 'TSU' ,
     driver_num: 22,
     country: '',
     team: 'Alpha Tauri',
@@ -199,6 +216,7 @@ export class DriversServiceService {
   }
   Ricciardo:DriversInterface = {
     name: 'Daniel Ricciardo',
+    id: 'RIC' ,
     driver_num: 3,
     country: '',
     team: 'Alpha Tauri',
@@ -211,6 +229,7 @@ export class DriversServiceService {
   }
   Magnusen:DriversInterface = {
     name: 'Kevin Magnusen',
+    id: 'MAG' ,
     driver_num: 20,
     country: '',
     team: 'Hass',
@@ -222,6 +241,7 @@ export class DriversServiceService {
   }
   Hulkenberg:DriversInterface = {
     name: 'Nico Hülkenberg',
+    id: 'HUL' ,
     driver_num: 27,
     country: '',
     team: 'Hass',

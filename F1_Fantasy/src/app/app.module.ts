@@ -9,6 +9,9 @@ import { CircuitsComponent } from './circuits/circuits.component';
 import { YourTeamComponent } from './your-team/your-team.component';
 import { ResultsComponent } from './results/results.component';
 import { MainComponent } from './main/main.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { MainComponent } from './main/main.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore())
   ],
   providers: [],
   bootstrap: [AppComponent]

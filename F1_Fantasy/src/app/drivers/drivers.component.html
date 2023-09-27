@@ -10,7 +10,7 @@
     <li>Fastest lap: 3 points.</li>
     <li>Grand Slam: 5 points.</li>
     <li>Hack trick: 3 points.</li>
-    <li>Any driver: 1 point per position gained or -1 per position lost at the end of the race according to their positions on grid.</li>
+    <li>Any driver: 1 point per position gained or -1 per position lost at the end of the race according to their positions on grid. A DNF means -3 points.</li>
 </ul>
 <section class="driversCardsContainer">
     <article *ngFor="let x of driversInfo, let i = index" class="driverInfoContainer">
@@ -38,6 +38,7 @@
 </section>
 <br>
 <br>
+<hr>
 <section class="selectedDriverContainer">
     <h4 *ngIf="completeOptionsMessage" > You already selected 5 drivers. Delete one if you want to change your team. </h4>
     <h4 *ngIf="alreadyPickedMessage" >This driver is already in your team</h4>
@@ -46,5 +47,5 @@
          <img [src]="chosenDriver.driver_Img" width="120px">
          <button (click)="deleteDriver(chosenDriver.driver_Name)">DELETE</button>
     </div>
-    <button>SAVE TEAM</button>
+    <button (click)="saveTeam()" >SAVE TEAM</button>
 </section>

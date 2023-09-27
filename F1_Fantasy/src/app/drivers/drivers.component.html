@@ -1,0 +1,50 @@
+<h1>DRIVERS</h1>
+<p>Select 5 drivers to be part of your team. The best performance they do on the Grand Prix, the more points you will get. </p>
+<ul>
+    <p>Points:</p>
+    <li>Winner of race: 10 points.</li>
+    <li>2nd position podium: 6 points.</li>
+    <li>3rd position podium: 4 points.</li>
+    <li>First position on grid: 5 points.</li>
+    <li>Second position on grid: 2 points.</li>
+    <li>Fastest lap: 3 points.</li>
+    <li>Grand Slam: 5 points.</li>
+    <li>Hack trick: 3 points.</li>
+    <li>Any driver: 1 point per position gained or -1 per position lost at the end of the race according to their positions on grid.</li>
+</ul>
+<section class="driversCardsContainer">
+    <article *ngFor="let x of driversInfo, let i = index" class="driverInfoContainer">
+        <div (click)="toggleDriverInfo(i)" class="driverInfoCard">
+            <div>
+                <img [src]="x.img" width="75px">
+                <div>
+                    <h3> {{x.name}} </h3>
+                    <span> # {{x.driver_num}} </span>
+                    <img [src]="x.country" alt="">
+                </div>
+            </div>
+            <div>
+                <span> {{x.team}} </span>
+                <img [src]="x.team_img" alt="">
+            </div>
+        </div>
+        <div *ngIf="showDriverInfo[i]" class="driverInfoToggled">
+            <li>Victorias:  {{x.GP_victories}} </li>
+            <li>Podiums:  {{x.podiums}} </li>
+            <li>Poles:  {{x.poles}} </li>
+        </div>
+        <button (click)="selectDriver(i)" >SELECT DRIVER</button>
+    </article>
+</section>
+<br>
+<br>
+<section class="selectedDriverContainer">
+    <h4 *ngIf="completeOptionsMessage" > You already selected 5 drivers. Delete one if you want to change your team. </h4>
+    <h4 *ngIf="alreadyPickedMessage" >This driver is already in your team</h4>
+    <div *ngFor="let chosenDriver of pickedDrivers" class="selectedDriverInfo">
+         <h4>{{chosenDriver.driver_Name}} </h4>
+         <img [src]="chosenDriver.driver_Img" width="120px">
+         <button (click)="deleteDriver(chosenDriver.driver_Name)">DELETE</button>
+    </div>
+    <button>SAVE TEAM</button>
+</section>

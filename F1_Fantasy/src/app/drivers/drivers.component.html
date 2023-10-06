@@ -1,13 +1,13 @@
 <section>
     <h1>DRIVERS</h1>
     <p>Select 5 drivers to be part of your team. The best performance they do on the Grand Prix, the more points you will get. </p>
-    <ul>
+    <ul class="gameRulesList">
         <p>Points:</p>
-        <li>Winner of race: 10 points.</li>
-        <li>2nd position podium: 6 points.</li>
-        <li>3rd position podium: 4 points.</li>
-        <li>First position on grid: 5 points.</li>
-        <li>Second position on grid: 2 points.</li>
+        <li>Race winner: 12 points.</li>
+        <li>2nd position on podium: 8 points.</li>
+        <li>3rd position on podium: 6 points.</li>
+        <li>First position on grid: 7 points.</li>
+        <li>Second position on grid: 4 points.</li>
         <li>Fastest lap: 3 points.</li>
         <li>Grand Slam: 5 points.</li>
         <li>Hack trick: 3 points.</li>
@@ -17,18 +17,18 @@
 <div class="sectionWrapper">
     <section class="selectedDriversContainer">
         <article class="messageWrapper">
-            <h4 *ngIf="completeOptionsMessage" > You already selected 5 drivers. Delete one if you want to change your team. </h4>
-            <h4 *ngIf="alreadyPickedMessage" >This driver is already in your team</h4>
-            <h4 *ngIf="showBudgetMessage" >This driver exceeds the remaining budget.</h4>
-            <h4> Total budget available: {{budget}} mill. € </h4>
+            <h4 class="warnMessage" *ngIf="completeOptionsMessage" > You already selected 5 drivers. Delete one if you want to change your team. </h4>         
+            <h4 class="warnMessage" *ngIf="alreadyPickedMessage" >This driver is already in your team</h4>
+            <h4 class="warnMessage" *ngIf="showBudgetMessage" >This driver exceeds the remaining budget.</h4>
+            <h4 class="budgetTitle"> Total budget available: {{budget}} mill. € </h4>
         </article>
         <div class="unkownContainer">
-            <article class="selectedDriversWrapper" *ngFor="let unkonwn of pickedDrivers">
-                <div class="unknownDriversContainer" >
-                    <img [src]="unkonwn.driver_Img" width="600px">
+            <article class="unknownDriversContainer" *ngFor="let unkonwn of pickedDrivers">
+
+                    <img [src]="unkonwn.driver_Img" class="unknownDriverIcon">
                     <h4> {{unkonwn.driver_Name}} </h4>
-                    <button (click)="deleteDriver(unkonwn.driver_Name)">DELETE</button>
-                </div>
+                    <img src="assets/cross.png" alt="" (click)="deleteDriver(unkonwn.driver_Name)" class="deleteIcon">
+
                 <!-- <div *ngFor="let chosenDriver of pickedDrivers" class="selectedDriverInfo">
                     <h4>{{chosenDriver.driver_Name}} </h4>
                     <img [src]="chosenDriver.driver_Img" width="120px">
@@ -42,18 +42,20 @@
             <div class="driverInfo-Y">
                 <div (click)="toggleDriverInfo(i)" class="driverInfoCard">
                     <img [src]="x.img" width="110px">
-                    <div>
-                        <h3> {{x.name}} </h3>
+                    <div class="numberCountryContainer">
                         <span> # {{x.driver_num}} </span>
-                        <img [src]="x.country" alt="">
+                        <img [src]="x.country"  alt="driver's country flag">
                     </div>
+                </div>
+                <div class="driverInfoCardDown">
+                    <h3> {{x.name}} </h3>
                     <div class="teamInfoContainer">
                         <span> {{x.team}} </span>
                         <img [src]="x.team_img" alt="" width="60px">
                     </div>
                     <h3>{{x.price}} mill. € </h3>
+                    <button (click)="selectDriver(i)" >SELECT DRIVER</button>
                 </div>
-                <button (click)="selectDriver(i)" >SELECT DRIVER</button>
             </div>
             <div *ngIf="showDriverInfo[i]" class="driverInfoToggled">
                 <li *ngIf="x.championships>0" >Championsips:{{x.championships}} </li>

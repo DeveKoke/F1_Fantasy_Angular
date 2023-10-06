@@ -15,7 +15,7 @@ export class ResultsService {
     {
       GP_id: 1,
       GP_CircuitImg:' ',
-      GP_Flag:'assets/Flags/Flag-map_of_Australia.svg.png',
+      GP_Flag:'assets/Flags/405px-Flag-map_of_Bahrain.svg.png',
       GP_Name:'Bahrein GP',
       winner:'VER',
       secondPodium:'PER',
@@ -49,7 +49,7 @@ export class ResultsService {
     },{
       GP_id: 2,
       GP_CircuitImg:' ',
-      GP_Flag:'assets/Flags/Flag-map_of_Australia.svg.png',
+      GP_Flag:'assets/Flags/Flag-map_of_Saudi_Arabia.svg.png',
       GP_Name:'Saudi Arabia GP',
       winner:'PER',
       secondPodium:'VER',
@@ -112,6 +112,241 @@ export class ResultsService {
       RIC:0,
       MAG:4,
       HUL:-5
+    },
+    
+  },{
+    GP_id: 4,
+    GP_CircuitImg:' ',
+    GP_Flag:'assets/Flags/Flag-map_of_Azerbaijan.svg.png',
+    GP_Name:'Azerbaiyan Grand Prix',
+    winner:'PER',
+    secondPodium:'VER',
+    thirdPodium:'LEC',
+    first_grid:'LEC',
+    second_grid:'VER',
+    fastLap:'LEC',
+    Positions:{
+      VER:0,
+      PER:2,
+      LEC:-2,
+      SAI:-1,
+      HAM:-1,
+      RUS:3,
+      ALO:2,
+      STR:2,
+      OCO:4,
+      GAS:3,
+      NOR:-2,
+      PIA:-1,
+      ZHO:-5,
+      BOT:-6,
+      ALB:0,
+      SAR:-2,
+      TSU:2,
+      RIC:0,
+      MAG:3,
+      HUL:3
+    }
+  },{
+    GP_id: 5,
+    GP_CircuitImg:' ',
+    GP_Flag:'assets/Flags/USA_Flag_Map.svg.png',
+    GP_Name:'Miami Grand Prix',
+    winner:'VER',
+    secondPodium:'PER',
+    thirdPodium:'ALO',
+    first_grid:'PER',
+    second_grid:'ALO',
+    fastLap:'VER',
+    Positions:{
+      VER:8,
+      PER:-1,
+      LEC:0,
+      SAI:-2,
+      HAM:7,
+      RUS:2,
+      ALO:-1,
+      STR:6,
+      OCO:-1,
+      GAS:-3,
+      NOR:-1,
+      PIA:0,
+      ZHO:-2,
+      BOT:-3,
+      ALB:-3,
+      SAR:-2,
+      TSU:6,
+      RIC:0,
+      MAG:-6,
+      HUL:-3
+    }
+  },{
+    GP_id: 6,
+    GP_CircuitImg:' ',
+    GP_Flag:'assets/Flags/Flag_map_of_Monaco.svg.png',
+    GP_Name:'Monaco Grand Prix',
+    winner:'VER',
+    secondPodium:'ALO',
+    thirdPodium:'OCO',
+    first_grid:'VER',
+    second_grid:'ALO',
+    fastLap:'HAM',
+    Positions:{
+      VER:0,
+      PER:4,
+      LEC:0,
+      SAI:-4,
+      HAM:1,
+      RUS:3,
+      ALO:0,
+      STR:-5,
+      OCO:0,
+      GAS:0,
+      NOR:1,
+      PIA:1,
+      ZHO:6,
+      BOT:4,
+      ALB:-1,
+      SAR:-2,
+      TSU:6,
+      RIC:0,
+      MAG:3,
+      HUL:-2
+    }
+  },{
+    GP_id: 7,
+    GP_CircuitImg:' ',
+    GP_Flag:'assets/Flags/Spain-flag-map-plus-ultra.png',
+    GP_Name:'Spanish Grand Prix',
+    winner:'VER',
+    secondPodium:'HAM',
+    thirdPodium:'RUS',
+    first_grid:'VER',
+    second_grid:'SAI',
+    fastLap:'VER',
+    GSlam:'VER',
+    Positions:{
+      VER:0,
+      PER:13,
+      LEC:9,
+      SAI:-3,
+      HAM:2,
+      RUS:9,
+      ALO:1,
+      STR:-1,
+      OCO:-2,
+      GAS:0,
+      NOR:-14,
+      PIA:-4,
+      ZHO:4,
+      BOT:-3,
+      ALB:2,
+      SAR:0,
+      TSU:3,
+      RIC:0,
+      MAG:-1,
+      HUL:-8
+    }
+  },{
+    GP_id: 8,
+    GP_CircuitImg:' ',
+    GP_Flag:'assets/Flags/Canada_flag_map.svg.png',
+    GP_Name:'Canadian Grand Prix',
+    winner:'VER',
+    secondPodium:'ALO',
+    thirdPodium:'HAM',
+    first_grid:'VER',
+    second_grid:'ALO',
+    fastLap:'PER',
+    Positions:{
+      VER:0,
+      PER:6,
+      LEC:6,
+      SAI:6,
+      HAM:0,
+      RUS:-5,
+      ALO:0,
+      STR:7,
+      OCO:-2,
+      GAS:3,
+      NOR:-6,
+      PIA:-3,
+      ZHO:4,
+      BOT:4,
+      ALB:2,
+      SAR:-5,
+      TSU:5,
+      RIC:0,
+      MAG:-4,
+      HUL:-10
+    }
+  },{
+    GP_id: 9,
+    GP_CircuitImg:' ',
+    GP_Flag:'assets/Flags/Flag-map_of_Austria.svg.png',
+    GP_Name:'Austrian Grand Prix',
+    winner:'VER',
+    secondPodium:'LEC',
+    thirdPodium:'PER',
+    first_grid:'VER',
+    second_grid:'LEC',
+    fastLap:'VER',
+    GSlam: 'VER',
+    Positions:{
+      VER:0,
+      PER:12,
+      LEC:0,
+      SAI:-3,
+      HAM:-3,
+      RUS:4,
+      ALO:2,
+      STR:-3,
+      OCO:-2,
+      GAS:-1,
+      NOR:8,
+      PIA:-3,
+      ZHO:5,
+      BOT:-1,
+      ALB:-1,
+      SAR:5,
+      TSU:-3,
+      RIC:0,
+      MAG:2,
+      HUL:-5
+    }
+  },{
+    GP_id: 10,
+    GP_CircuitImg:' ',
+    GP_Flag:'assets/Flags/flag-map-of-united-kingdom.png',
+    GP_Name:'British Grand Prix',
+    winner:'VER',
+    secondPodium:'NOR',
+    thirdPodium:'HAM',
+    first_grid:'VER',
+    second_grid:'NOR',
+    fastLap:'VER',
+    HTrick: 'VER',
+    Positions:{
+      VER:0,
+      PER:2,
+      LEC:-5,
+      SAI:-5,
+      HAM:4,
+      RUS:1,
+      ALO:2,
+      STR:-2,
+      OCO:-5,
+      GAS:-5,
+      NOR:0,
+      PIA:-1,
+      ZHO:2,
+      BOT:8,
+      ALB:0,
+      SAR:3,
+      TSU:0,
+      RIC:0,
+      MAG:-5,
+      HUL:3
     }
   },
 ]
@@ -129,17 +364,17 @@ export class ResultsService {
       let driverTotalPoints:number = 0
       
       if(userTeam[index].driver_Id === this.GPDataResults[GPIndex].winner ){
-        driverTotalPoints+=10
+        driverTotalPoints+=12
       }else if(userTeam[index].driver_Id === this.GPDataResults[GPIndex].secondPodium){
-        driverTotalPoints+=6
+        driverTotalPoints+=8
       }else if(userTeam[index].driver_Id === this.GPDataResults[GPIndex].thirdPodium){
-        driverTotalPoints+=4
+        driverTotalPoints+=6
       } 
 
       if(userTeam[index].driver_Id === this.GPDataResults[GPIndex].first_grid){
-        driverTotalPoints+=5
+        driverTotalPoints+=7
       }else if(userTeam[index].driver_Id === this.GPDataResults[GPIndex].second_grid){
-        driverTotalPoints+=2
+        driverTotalPoints+=4
       }
 
       if(userTeam[index].driver_Id === this.GPDataResults[GPIndex].fastLap){

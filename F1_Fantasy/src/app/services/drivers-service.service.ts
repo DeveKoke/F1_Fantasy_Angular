@@ -8,11 +8,11 @@ export class DriversServiceService {
   
 
   Verstappen:DriversInterface = {
-    price: 7,
+    price: 8,
     name: 'Max Verstappen',
     id: 'VER' ,
     driver_num: 1,
-    country: '',
+    country: 'assets/Flags/Netherlands round flag.png',
     team: 'Red Bull Racing',
     team_img: 'assets/RBR Logo.png',
     img: 'assets/VER.png',
@@ -23,11 +23,11 @@ export class DriversServiceService {
     poles:29
   }
   Perez:DriversInterface = {
-    price: 5,
+    price: 6,
     name: 'Sergio Pérez',
     id: 'PER' ,
     driver_num: 11,
-    country: '',
+    country: 'assets/Flags/Mexico roun flag.png',
     team: 'Red Bull Racing',
     team_img: 'assets/RBR Logo.png',
     img: 'assets/PER.png',
@@ -37,11 +37,11 @@ export class DriversServiceService {
     poles:3
   }
   Leclerc:DriversInterface = {
-    price: 5,
+    price: 6,
     name: 'Charles Leclerc',
     id: 'LEC' ,
     driver_num: 16,
-    country: '',
+    country: 'assets/Flags/Monaco flag-round.png',
     team: 'Ferrari',
     team_img: 'assets/Ferrari.png',
     img: 'assets/LEC.png',
@@ -51,11 +51,11 @@ export class DriversServiceService {
     poles:20
   }
   Sainz:DriversInterface = {
-    price: 5,
+    price: 6,
     name: 'Carlos Sainz',
     id: 'SAI' ,
     driver_num: 55,
-    country: '',
+    country: 'assets/Flags/Spain_flag_icon.svg.png',
     team: 'Ferrari',
     team_img: 'assets/Ferrari.png',
     img: 'assets/SAI.png',
@@ -65,26 +65,26 @@ export class DriversServiceService {
     poles:5
   }
   Hamilton:DriversInterface = {
-    price: 7,
+    price: 8,
     name: 'Lewis Hamilton',
     id: 'HAM' ,
     driver_num: 44,
-    country: '',
+    country: 'assets/Flags/UK round flag.png',
     team: 'Mercedes',
     team_img: 'assets/Mercedes.png',
     img: 'assets/HAM.png',
     f1_champion: true,
     championships:7,
-    GP_victories:32,
+    GP_victories:103,
     podiums:196,
     poles:103
   }
   Russell:DriversInterface = {
-    price: 5,
+    price: 6,
     name: 'George Russell',
     id: 'RUS' ,
     driver_num: 63,
-    country: '',
+    country: 'assets/Flags/UK round flag.png',
     team: 'Mercedes',
     team_img: 'assets/Mercedes.png',
     img: 'assets/RUS.png',
@@ -94,11 +94,11 @@ export class DriversServiceService {
     poles:1
   }
   Alonso:DriversInterface = {
-    price: 7,
+    price: 8,
     name: 'Fernando Alonso',
     id: 'ALO' ,
     driver_num: 14,
-    country: '',
+    country: 'assets/Flags/Spain_flag_icon.svg.png',
     team: 'Aston Martin',
     team_img: 'assets/Aston Martin.png',
     img: 'assets/ALO.png',
@@ -112,8 +112,8 @@ export class DriversServiceService {
     price: 2,
     name: 'Lance Stroll',
     id: 'STR' ,
-    driver_num: 63,
-    country: '',
+    driver_num: 18,
+    country: 'assets/Flags/canada flag-3d-round.png',
     team: 'Aston Martin',
     team_img: 'assets/Aston Martin.png',
     img: 'assets/STR.png',
@@ -122,11 +122,11 @@ export class DriversServiceService {
     poles:1
   }
   Ocon:DriversInterface = {
-    price:3,
+    price:4,
     name: 'Esteban Ocon',
     id: 'OCO' ,
     driver_num: 31,
-    country: '',
+    country: 'assets/Flags/Round france flag.png',
     team: 'Alpine',
     team_img: 'assets/Alpine.png',
     img: 'assets/OCO.png',
@@ -139,7 +139,7 @@ export class DriversServiceService {
     name: 'Pierre Gasly',
     id: 'GAS' ,
     driver_num: 10,
-    country: '',
+    country: 'assets/Flags/Round france flag.png',
     team: 'Alpine',
     team_img: 'assets/Alpine.png',
     img: 'assets/GAS.png',
@@ -148,11 +148,11 @@ export class DriversServiceService {
     podiums:4
   }
   Norris:DriversInterface = {
-    price: 4,
+    price: 5,
     name: 'Lando Norris',
     id: 'NOR' ,
     driver_num: 4,
-    country: '',
+    country: 'assets/Flags/UK round flag.png',
     team: 'McLaren',
     team_img: 'assets/mclaren-logo.png',
     img: 'assets/NOR.png',
@@ -165,7 +165,7 @@ export class DriversServiceService {
     name: 'Oscar Piastri',
     id: 'PIA' ,
     driver_num: 81,
-    country: '',
+    country: 'assets/Flags/Australia round Flag.png',
     team: 'McLaren',
     team_img: 'assets/mclaren-logo.png',
     img: 'assets/PIA.png',
@@ -177,7 +177,7 @@ export class DriversServiceService {
     name: 'Guanyu Zhou',
     id: 'ZHO' ,
     driver_num: 24,
-    country: '',
+    country: 'assets/Flags/china round flag.png',
     team: 'Alpha Romeo',
     team_img: 'assets/Alfa Romeo.png',
     img: 'assets/ZHO.png',
@@ -188,7 +188,7 @@ export class DriversServiceService {
     name: 'Valtery Bottas',
     id: 'BOT' ,
     driver_num: 77,
-    country: '',
+    country: 'assets/Flags/finland-flag round.png',
     team: 'Alpha Romeo',
     team_img: 'assets/Alfa Romeo.png',
     img: 'assets/BOT.png',
@@ -198,11 +198,11 @@ export class DriversServiceService {
     poles:20
   }
   Albon:DriversInterface = {
-    price: 3,
+    price: 4,
     name: 'Alexander Albon',
     id: 'ALB' ,
     driver_num: 23,
-    country: '',
+    country: 'assets/Flags/Thailand  round Flag.png',
     team: 'Williams',
     team_img: 'assets/Logo_Williams_F1.png',
     img: 'assets/ALB.png',
@@ -214,7 +214,7 @@ export class DriversServiceService {
     name: 'Logan Sargeant',
     id: 'SAR' ,
     driver_num: 2,
-    country: '',
+    country: 'assets/Flags/USa round flag.png',
     team: 'Williams',
     team_img: 'assets/Logo_Williams_F1.png',
     img: 'assets/SAR.png',
@@ -225,18 +225,18 @@ export class DriversServiceService {
     name: 'Yuki Tsunoda',
     id: 'TSU' ,
     driver_num: 22,
-    country: '',
+    country: 'assets/Flags/Japanese_flag_rounded.svg.png',
     team: 'Alpha Tauri',
     team_img: 'assets/AlphaTauri.svg.png',
     img: 'assets/TSU.png',
     f1_champion: false
   }
   Ricciardo:DriversInterface = {
-    price: 3,
+    price: 4,
     name: 'Daniel Ricciardo',
     id: 'RIC' ,
     driver_num: 3,
-    country: '',
+    country: 'assets/Flags/Australia round Flag.png',
     team: 'Alpha Tauri',
     team_img: 'assets/AlphaTauri.svg.png',
     img: 'assets/RIC.png',
@@ -246,11 +246,11 @@ export class DriversServiceService {
     poles:3
   }
   Magnusen:DriversInterface = {
-    price: 2,
+    price: 3,
     name: 'Kevin Magnusen',
     id: 'MAG' ,
     driver_num: 20,
-    country: '',
+    country: 'assets/Flags/denmark flag round.png',
     team: 'Hass',
     team_img: 'assets/Logo_Haas_F1.png',
     img: 'assets/MAG.png',
@@ -263,7 +263,7 @@ export class DriversServiceService {
     name: 'Nico Hülkenberg',
     id: 'HUL' ,
     driver_num: 27,
-    country: '',
+    country: 'assets/Flags/Germany round flag.png',
     team: 'Hass',
     team_img: 'assets/Logo_Haas_F1.png',
     img: 'assets/HUL.png',

@@ -1,0 +1,33 @@
+.resultsCardWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    button{
+        max-height: 1.8em;
+        margin-left: 2em;
+    }
+    .countryFlag{
+        width: 70px;
+        margin: 0 1.5em;
+    }
+}
+.YTWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.driversResultsContainer{
+    display: flex;
+    flex-direction: column;
+}
+.driversResultsCardsWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.driverResultCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

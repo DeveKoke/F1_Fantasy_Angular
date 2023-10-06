@@ -1,12 +1,11 @@
-<div>
-    LOGIN
-</div>
-<nav>
-    <ul>
-        <li [routerLink]="['']">Home</li>
-        <li [routerLink]="['drivers']">Drivers</li>
-        <li [routerLink]="['circuitsF1']">Circuits</li>
-        <li [routerLink]="['your_team']">Your Team</li>
-        <li [routerLink]="['races_results']"> Results</li>
-    </ul>
+<nav >
+    <div>
+        LOGIN
+    </div>
+    <div class="routingWrapper">
+        <span [routerLink]="['']">Home</span>
+        <span [routerLink]="['circuitsF1']">Circuits</span>
+        <span [routerLink]="['drivers']">Drivers</span>
+        <span [routerLink]="['your_team']">Team Results</span>
+    </div>
 </nav>

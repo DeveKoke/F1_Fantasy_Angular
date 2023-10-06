@@ -8,13 +8,14 @@ export class DriversServiceService {
   
 
   Verstappen:DriversInterface = {
+    price: 7,
     name: 'Max Verstappen',
     id: 'VER' ,
     driver_num: 1,
     country: '',
     team: 'Red Bull Racing',
-    team_img: '',
-    img: '',
+    team_img: 'assets/RBR Logo.png',
+    img: 'assets/VER.png',
     f1_champion: true,
     championships:2,
     GP_victories:48,
@@ -22,52 +23,56 @@ export class DriversServiceService {
     poles:29
   }
   Perez:DriversInterface = {
+    price: 5,
     name: 'Sergio Pérez',
     id: 'PER' ,
     driver_num: 11,
     country: '',
     team: 'Red Bull Racing',
-    team_img: '',
-    img: '',
+    team_img: 'assets/RBR Logo.png',
+    img: 'assets/PER.png',
     f1_champion: false,
     GP_victories:6,
     podiums:34,
     poles:3
   }
   Leclerc:DriversInterface = {
+    price: 5,
     name: 'Charles Leclerc',
     id: 'LEC' ,
     driver_num: 16,
     country: '',
     team: 'Ferrari',
-    team_img: '',
-    img: '',
+    team_img: 'assets/Ferrari.png',
+    img: 'assets/LEC.png',
     f1_champion: false,
     GP_victories:5,
     podiums:27,
     poles:20
   }
   Sainz:DriversInterface = {
+    price: 5,
     name: 'Carlos Sainz',
     id: 'SAI' ,
     driver_num: 55,
     country: '',
     team: 'Ferrari',
-    team_img: '',
-    img: '',
+    team_img: 'assets/Ferrari.png',
+    img: 'assets/SAI.png',
     f1_champion: false,
     GP_victories:2,
     podiums:17,
     poles:5
   }
   Hamilton:DriversInterface = {
+    price: 7,
     name: 'Lewis Hamilton',
     id: 'HAM' ,
     driver_num: 44,
     country: '',
     team: 'Mercedes',
-    team_img: '',
-    img: '',
+    team_img: 'assets/Mercedes.png',
+    img: 'assets/HAM.png',
     f1_champion: true,
     championships:7,
     GP_victories:32,
@@ -75,26 +80,28 @@ export class DriversServiceService {
     poles:103
   }
   Russell:DriversInterface = {
+    price: 5,
     name: 'George Russell',
     id: 'RUS' ,
     driver_num: 63,
     country: '',
     team: 'Mercedes',
-    team_img: '',
-    img: '',
+    team_img: 'assets/Mercedes.png',
+    img: 'assets/RUS.png',
     f1_champion: false,
     GP_victories:1,
     podiums:1,
-    poles:103
+    poles:1
   }
   Alonso:DriversInterface = {
+    price: 7,
     name: 'Fernando Alonso',
     id: 'ALO' ,
     driver_num: 14,
     country: '',
     team: 'Aston Martin',
-    team_img: '',
-    img: 'assets/fernando-alonso.jpg',
+    team_img: 'assets/Aston Martin.png',
+    img: 'assets/ALO.png',
     f1_champion: true,
     championships:2,
     GP_victories:32,
@@ -102,151 +109,164 @@ export class DriversServiceService {
     poles:22
   }
   Stroll:DriversInterface = {
+    price: 2,
     name: 'Lance Stroll',
     id: 'STR' ,
     driver_num: 63,
     country: '',
     team: 'Aston Martin',
-    team_img: '',
-    img: '',
+    team_img: 'assets/Aston Martin.png',
+    img: 'assets/STR.png',
     f1_champion: false,
     podiums:3,
     poles:1
   }
   Ocon:DriversInterface = {
+    price:3,
     name: 'Esteban Ocon',
     id: 'OCO' ,
     driver_num: 31,
     country: '',
     team: 'Alpine',
-    team_img: '',
-    img: '',
+    team_img: 'assets/Alpine.png',
+    img: 'assets/OCO.png',
     f1_champion: false,
     GP_victories:1,
     podiums:3
   }
   Gasly:DriversInterface = {
+    price: 2,
     name: 'Pierre Gasly',
     id: 'GAS' ,
     driver_num: 10,
     country: '',
     team: 'Alpine',
-    team_img: '',
-    img: '',
+    team_img: 'assets/Alpine.png',
+    img: 'assets/GAS.png',
     f1_champion: false,
     GP_victories:1,
     podiums:4
   }
   Norris:DriversInterface = {
+    price: 4,
     name: 'Lando Norris',
     id: 'NOR' ,
     driver_num: 4,
     country: '',
     team: 'McLaren',
-    team_img: '',
-    img: '',
+    team_img: 'assets/mclaren-logo.png',
+    img: 'assets/NOR.png',
     f1_champion: false,
     podiums:10,
     poles:1
   }
   Piastri:DriversInterface = {
+    price: 2,
     name: 'Oscar Piastri',
     id: 'PIA' ,
     driver_num: 81,
     country: '',
     team: 'McLaren',
-    team_img: '',
-    img: '',
+    team_img: 'assets/mclaren-logo.png',
+    img: 'assets/PIA.png',
     f1_champion: false,
     podiums:1,
   }
   Zhou:DriversInterface = {
+    price: 2,
     name: 'Guanyu Zhou',
     id: 'ZHO' ,
     driver_num: 24,
     country: '',
     team: 'Alpha Romeo',
-    team_img: '',
-    img: '',
+    team_img: 'assets/Alfa Romeo.png',
+    img: 'assets/ZHO.png',
     f1_champion: false
   }
   Bottas:DriversInterface = {
+    price: 3,
     name: 'Valtery Bottas',
     id: 'BOT' ,
     driver_num: 77,
     country: '',
     team: 'Alpha Romeo',
-    team_img: '',
-    img: '',
+    team_img: 'assets/Alfa Romeo.png',
+    img: 'assets/BOT.png',
     f1_champion: false,
     GP_victories:10,
     podiums:67,
     poles:20
   }
   Albon:DriversInterface = {
+    price: 3,
     name: 'Alexander Albon',
     id: 'ALB' ,
     driver_num: 23,
     country: '',
     team: 'Williams',
-    team_img: '',
-    img: '',
+    team_img: 'assets/Logo_Williams_F1.png',
+    img: 'assets/ALB.png',
     f1_champion: false,
     podiums: 2
   }
   Sargeant:DriversInterface = {
+    price: 2,
     name: 'Logan Sargeant',
     id: 'SAR' ,
     driver_num: 2,
     country: '',
     team: 'Williams',
-    team_img: '',
-    img: '',
+    team_img: 'assets/Logo_Williams_F1.png',
+    img: 'assets/SAR.png',
     f1_champion: false
   }
   Tsunoda:DriversInterface = {
+    price: 2,
     name: 'Yuki Tsunoda',
     id: 'TSU' ,
     driver_num: 22,
     country: '',
     team: 'Alpha Tauri',
-    team_img: '',
-    img: '',
+    team_img: 'assets/AlphaTauri.svg.png',
+    img: 'assets/TSU.png',
     f1_champion: false
   }
   Ricciardo:DriversInterface = {
+    price: 3,
     name: 'Daniel Ricciardo',
     id: 'RIC' ,
     driver_num: 3,
     country: '',
     team: 'Alpha Tauri',
-    team_img: '',
-    img: '',
+    team_img: 'assets/AlphaTauri.svg.png',
+    img: 'assets/RIC.png',
     f1_champion: false,
     GP_victories:8,
     podiums:32,
     poles:3
   }
   Magnusen:DriversInterface = {
+    price: 2,
     name: 'Kevin Magnusen',
     id: 'MAG' ,
     driver_num: 20,
     country: '',
     team: 'Hass',
-    team_img: '',
-    img: '',
+    team_img: 'assets/Logo_Haas_F1.png',
+    img: 'assets/MAG.png',
     f1_champion: false,
     podiums:1,
     poles:3
   }
   Hulkenberg:DriversInterface = {
+    price: 2,
     name: 'Nico Hülkenberg',
     id: 'HUL' ,
     driver_num: 27,
     country: '',
     team: 'Hass',
-    team_img: '',
-    img: '',
+    team_img: 'assets/Logo_Haas_F1.png',
+    img: 'assets/HUL.png',
     f1_champion: false,
     poles:1
   }

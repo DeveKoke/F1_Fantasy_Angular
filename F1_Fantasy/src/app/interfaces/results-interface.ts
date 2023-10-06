@@ -1,4 +1,5 @@
-export interface GPDataResult {
+export interface GPDataResults {
+    GP_id:number,
     GP_CircuitImg:string,
     GP_Flag:string,
     GP_Name:string,
@@ -11,6 +12,7 @@ export interface GPDataResult {
     GSlam?:string,
     HTrick?:string,
     Positions:{
+        // driverId(driverId: any): unknown
         VER:number,
         PER:number,
         LEC:number,

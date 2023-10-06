@@ -1,0 +1,17 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 3.5em;
+    align-items: center;
+}
+.routingWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40%;
+    span:hover{
+        cursor: pointer;
+        color: red  ;
+    }
+}

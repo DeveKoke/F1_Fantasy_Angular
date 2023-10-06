@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ResultsService } from '../services/results.service';
 
 @Component({
   selector: 'app-results',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./results.component.scss']
 })
 export class ResultsComponent {
+
+  constructor(private results:ResultsService){}
+
+  
+
 
 }

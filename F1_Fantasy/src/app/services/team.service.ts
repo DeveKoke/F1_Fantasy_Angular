@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Firestore, collection, addDoc} from '@angular/fire/firestore';
-import { TeamInterface } from '../interfaces/team-interface';
 import { SelectedDriverInterface } from '../interfaces/selectedDriver-interface';
 
 
@@ -15,7 +14,7 @@ export class TeamService {
     return this.pickedDrivers;
   }
 
-  setPickedDrivers(newArray: any[]): void {
+  setPickedDrivers(newArray: SelectedDriverInterface[]): void {
     this.pickedDrivers = newArray;
   }
 
@@ -34,11 +33,11 @@ export class TeamService {
 
 
   // Añadimos firestore
-  constructor(private firestore: Firestore) { }
+  // constructor(private firestore: Firestore) { }
   
-  addTeam(team:TeamInterface){ 
-    //Creamos colección llamada team e indicamos qué vamos a introducir en ella, en este caso, el array pickedDrivers.
-    const teamRef =  collection(this.firestore, 'Teams')
-    return addDoc(teamRef, team)
-  }
+  // addTeam(team:TeamInterface){ 
+  //   //Creamos colección llamada team e indicamos qué vamos a introducir en ella, en este caso, el array pickedDrivers.
+  //   const teamRef =  collection(this.firestore, 'Teams')
+  //   return addDoc(teamRef, team)
+  // }
 }

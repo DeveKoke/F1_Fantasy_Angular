@@ -1,5 +1,28 @@
 <h1>YOUR TEAM</h1>
+<section>
+    <article>
+        <div class="YTWrapper">
+            <div *ngFor="let driver of userTeam" class="driverResultCard">
+                <img [src]="driver.driver_Img" alt="driver" width="130px">
+                <h3>{{driver.driver_Name}}</h3> 
+            </div>
+        </div>
+    </article>
+    <article *ngFor="let GPData of GPDataResults; index as i">
+        <div class="resultsCardWrapper"  >
+            <img [src]="GPData.GP_Flag" alt="country flag" class="countryFlag">
+            <h2>{{GPData.GP_Name}}</h2>
+            <button (click)="toggleResults(i)" > check results</button>
+        </div>
+        <div *ngIf="showGPResults[i]" class="driversResultsContainer">
+            <div class="driversResultsCardsWrapper">
+                <div *ngFor="let driver of userTeam" class="driverResultCard">
+                    <img [src]="driver.driver_Img" alt="driver" width="100px">
+                    <h4>{{driver.driver_Points}} points</h4>
+                </div>
+            </div>
+            <h3>Total points: {{userTotalGPPoints}} </h3>
+        </div>
+    </article>
+</section>
 
-<ul>
-    <li *ngFor="let driver of userTeam" > {{driver.driver_Name}} </li>
-</ul>

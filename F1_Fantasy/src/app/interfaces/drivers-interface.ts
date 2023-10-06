@@ -1,4 +1,5 @@
 export interface DriversInterface {
+    price:number
     name:string,
     id:string,
     driver_num:number,
@@ -10,5 +11,5 @@ export interface DriversInterface {
     championships?:number,
     GP_victories?:number,
     podiums?:number,
-    poles?:number
+    poles?:number,
 }

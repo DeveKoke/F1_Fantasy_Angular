@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { DriversComponent } from './drivers/drivers.component';
 import { CircuitsComponent } from './circuits/circuits.component';
-import { ResultsComponent } from './results/results.component';
 import { YourTeamComponent } from './your-team/your-team.component';
 
 const routes: Routes = [
@@ -12,7 +11,6 @@ const routes: Routes = [
   {path: 'your_team', component:YourTeamComponent},
   {path: 'drivers', component:DriversComponent},
   {path: 'circuitsF1', component:CircuitsComponent},
-  {path: 'races_results', component:ResultsComponent},
   {path: '**', redirectTo:''} 
 ];
 

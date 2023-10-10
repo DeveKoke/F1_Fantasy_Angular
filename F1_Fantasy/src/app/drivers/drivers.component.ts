@@ -18,6 +18,7 @@ export class DriversComponent {
   toggleDriverInfo(index: number):void {
     this.showDriverInfo[index] = !this.showDriverInfo[index];
   }
+  driverCardClass:string = ''
 
   //Drivers price
   budget:number = 25;
@@ -33,31 +34,36 @@ export class DriversComponent {
     driver_Img:'assets/desconocido.png',
     driver_Id:'',
     driver_Points:0,
-    driver_Price:0
+    driver_Price:0,
+    driver_Team:''
     },{
       driver_Name:'No driver selected',
       driver_Img:'assets/desconocido.png',
       driver_Id:'',
       driver_Points:0,
-      driver_Price:0
+      driver_Price:0,
+      driver_Team:''
       },{
         driver_Name:'No driver selected',
         driver_Img:'assets/desconocido.png',
         driver_Id:'',
         driver_Points:0,
-        driver_Price:0
+        driver_Price:0,
+        driver_Team:''
         },{
           driver_Name:'No driver selected',
           driver_Img:'assets/desconocido.png',
           driver_Id:'',
           driver_Points:0,
-          driver_Price:0
+          driver_Price:0,
+          driver_Team:''
           },{
             driver_Name:'No driver selected',
             driver_Img:'assets/desconocido.png',
             driver_Id:'',
             driver_Points:0,
-            driver_Price:0
+            driver_Price:0,
+            driver_Team:''
             }];
 
   completeOptionsMessage:boolean = false;
@@ -67,12 +73,14 @@ export class DriversComponent {
     const driver_Img: string = this.driversInfo[i].img;
     const driver_Id:string = this.driversInfo[i].id;
     const driver_Price:number = this.driversInfo[i].price;
-    const driverPickedInfo: any = {
+    const driver_Team: string = this.driversInfo[i].teamCode;
+    const driverPickedInfo: SelectedDriverInterface = {
       driver_Name: driver_Name,
       driver_Img: driver_Img, 
       driver_Id: driver_Id,
       driver_Points:0,
-      driver_Price: driver_Price
+      driver_Price: driver_Price,
+      driver_Team: driver_Team
     };
     // console.log(driverPickedInfo);
     
@@ -82,7 +90,7 @@ export class DriversComponent {
 
 
 
-
+    // If user has selected 5 drivers
     if (this.pickedDrivers[4].driver_Name !== 'No driver selected') {
       
       this.completeOptionsMessage = true;
@@ -91,16 +99,18 @@ export class DriversComponent {
       }, 4500);
       
     } 
-    else
+    else  //If the driver selected is already chosen
     if (this.pickedDrivers.some((driver)=>driver.driver_Name === driverPickedInfo.driver_Name)){
       this.alreadyPickedMessage = true;
       setTimeout(() => {
         this.alreadyPickedMessage = false 
       }, 4500);
     } 
-    else 
+    else  // If driver's prices is enough for budget left.
     if (this.budget >= driverPickedInfo.driver_Price){
       this.newDrivers.push(driverPickedInfo);
+      this.driverCardClass = driverPickedInfo.driver_Team;
+      
       
       for (let index = 0; index < this.newDrivers.length; index++) {
         this.pickedDrivers[index] = this.newDrivers[index];
@@ -132,7 +142,8 @@ export class DriversComponent {
         driver_Img:'assets/desconocido.png',
         driver_Id:'',
         driver_Points:0,
-        driver_Price: 0
+        driver_Price: 0,
+        driver_Team:''
         }
 
       this.newDrivers.splice(indexDriver, 1);

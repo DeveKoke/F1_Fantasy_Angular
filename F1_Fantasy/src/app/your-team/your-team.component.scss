@@ -42,11 +42,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
+    height: 30rem;
+    border-radius: 12px;
     width: 50%;
     padding: .5em 0;
     margin: 0 auto 1rem;
-    color: white;
-    background-color:  rgb(93, 85, 85);
+    background-color:  rgb(179, 174, 174);
 }
 .driversResultsCardsWrapper{
     display: flex;
@@ -57,5 +59,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 0 1em;
+    border-radius: 12px;
+    min-width: 11em;
+    min-height: 13rem;
 }

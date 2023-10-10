@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,500&display=swap');
+@import url('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+
 html{
     background-color: rgb(49, 46, 46);
     font-family: 'Rubik';}
+body{
+    margin: 0;
+}
 h1{
     color: white;
+    letter-spacing: 2px;
 }
 section{
     color:white;

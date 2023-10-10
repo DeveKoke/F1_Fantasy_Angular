@@ -1,5 +1,6 @@
 <section>
     <h1>DRIVERS</h1>
+    <h3>Rules of the game</h3>
     <p>Select 5 drivers to be part of your team. The best performance they do on the Grand Prix, the more points you will get. </p>
     <ul class="gameRulesList">
         <p>Points:</p>
@@ -22,24 +23,27 @@
             <h4 class="warnMessage" *ngIf="showBudgetMessage" >This driver exceeds the remaining budget.</h4>
             <h4 class="budgetTitle"> Total budget available: {{budget}} mill. € </h4>
         </article>
-        <div class="unkownContainer">
-            <article class="unknownDriversContainer" *ngFor="let unkonwn of pickedDrivers">
-
-                    <img [src]="unkonwn.driver_Img" class="unknownDriverIcon">
-                    <h4> {{unkonwn.driver_Name}} </h4>
-                    <img src="assets/cross.png" alt="" (click)="deleteDriver(unkonwn.driver_Name)" class="deleteIcon">
-
-                <!-- <div *ngFor="let chosenDriver of pickedDrivers" class="selectedDriverInfo">
-                    <h4>{{chosenDriver.driver_Name}} </h4>
-                    <img [src]="chosenDriver.driver_Img" width="120px">
-                </div> -->
-            </article>
-        </div>
+        <article class="unkownContainer">
+            <div  *ngFor="let unkonwn of pickedDrivers">
+                <!--  -->
+                <article class="unknownDriversContainer" [ngClass]="unkonwn.driver_Team" >
+    
+                        <img [src]="unkonwn.driver_Img" class="unknownDriverIcon">
+                        <h4> {{unkonwn.driver_Name}} </h4>
+                        <img src="assets/cross.png" alt="" (click)="deleteDriver(unkonwn.driver_Name)" class="deleteIcon">
+    
+                    <!-- <div *ngFor="let chosenDriver of pickedDrivers" class="selectedDriverInfo">
+                        <h4>{{chosenDriver.driver_Name}} </h4>
+                        <img [src]="chosenDriver.driver_Img" width="120px">
+                    </div> -->
+                </article>
+            </div>
+        </article>
         <!-- <button (click)="saveTeam()" >SAVE TEAM</button> -->
     </section>
     <section class="driversCardsContainer">
         <article *ngFor="let x of driversInfo, let i = index" class="driverInfoContainer">
-            <div class="driverInfo-Y">
+            <div class="driverInfo-Y " [ngClass]="x.teamCode" >
                 <div (click)="toggleDriverInfo(i)" class="driverInfoCard">
                     <img [src]="x.img" width="110px">
                     <div class="numberCountryContainer">
@@ -56,12 +60,12 @@
                     <h3>{{x.price}} mill. € </h3>
                     <button (click)="selectDriver(i)" >SELECT DRIVER</button>
                 </div>
-            </div>
-            <div *ngIf="showDriverInfo[i]" class="driverInfoToggled">
-                <li *ngIf="x.championships>0" >Championsips:{{x.championships}} </li>
-                <li *ngIf="x.GP_victories>0">GP Victories:  {{x.GP_victories}} </li>
-                <li *ngIf="x.podiums>0">Podiums:  {{x.podiums}} </li>
-                <li *ngIf="x.poles>0">Poles:  {{x.poles}} </li>
+                <div *ngIf="showDriverInfo[i]" class="driverInfoToggled" >
+                    <li *ngIf="x.championships>0" >Championsips: {{x.championships}} </li>
+                    <li *ngIf="x.GP_victories>0">GP Victories: {{x.GP_victories}} </li>
+                    <li *ngIf="x.podiums>0">Podiums:  {{x.podiums}} </li>
+                    <li *ngIf="x.poles>0">Poles:  {{x.poles}} </li>
+                </div>
             </div>
         </article>
     </section>

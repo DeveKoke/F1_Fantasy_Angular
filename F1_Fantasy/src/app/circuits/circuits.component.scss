@@ -1,0 +1,90 @@
+.mapContainer{
+    width: 75%;
+    margin: auto;
+    height: 550px;
+    padding: 1.5em;
+    background-color: rgb(179, 174, 174);
+    border-radius: 5px;
+}
+#map { height: 100%; }
+.popupContent:hover{
+    cursor: pointer;
+}
+.shapeCircuitList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height:100px ;
+    margin: 1.5rem 0;
+    img{
+        width: 60px;
+        transition: all 0.3s ease; 
+    }
+    img:hover{
+        background-color: white;
+        padding: 4px;
+        width: 90px;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+}
+.circuitInfoContainer{
+    width: 90%;
+    margin: 2rem auto 1rem;
+    display: flex;
+    flex-direction: column;
+    .circuitSectorImg{
+        width: 900px;
+        margin: auto;
+        padding: 1rem;
+        border: solid rgb(208, 25, 25);
+        border-width: 0 4px 4px 0;
+        border-radius: 12px;
+    }
+}
+.circuitInfoTitleWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 4rem;
+    height: 200px;
+    width: 950px;
+    // border-radius: 12px;
+    // border: solid white;
+    // border-width: 0 3px 3px 0;
+    img{
+        width: 8rem;
+        margin-right: 2rem;
+    }
+    span{
+        font-size: 3rem;
+        margin-left: 5rem;
+        border-radius: 12px;
+        background-color: rgb(179, 174, 174);
+        padding: .5rem 1.2rem;
+    }
+}
+.circuitDataWrapper{
+    display: grid;
+    grid-template-columns: (auto auto);
+    grid-template-rows: (auto auto auto);
+    justify-content: center;
+    margin: 3rem auto;
+}
+.circuitData{
+    font-size: 3rem;
+    margin-left: 5rem;
+    border-radius: 12px;
+    margin: 1.2rem 3rem;
+    width: 20rem;
+    padding: .5rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(255, 255, 255);
+    border-width: 0 4px 4px 0;
+    border-radius: 12px;
+    .titleData{
+        font-size: 1.5rem;
+    }
+}
+

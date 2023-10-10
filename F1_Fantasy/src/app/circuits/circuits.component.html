@@ -1,1 +1,40 @@
-<p>circuits works!</p>
+<section>
+    <h1>CIRCUITS</h1>
+    <h2>All you need to know about Formula 1 circuits 2023 championship</h2>
+    <article class="shapeCircuitList">
+        <img *ngFor="let shape of CircuitsData, let i = index" (click)="getCircuitInfo(i)" src="{{shape.shape}}" alt="link to {{shape.circuit}} information">
+    </article>
+    <article class="mapContainer">
+        <div id="map"></div>
+    </article>
+</section>
+<section *ngIf="showCircuitInfo" class="circuitInfoContainer">
+    <div class="circuitInfoTitleWrapper">
+        <img  [src]="CircuitInfo.flag"  alt="{{CircuitInfo.locationName}} flag ">
+        <div>
+            <h2 class="h2PopUp"> {{CircuitInfo.locationName}} Grand Prix </h2>
+            <h3 >{{CircuitInfo.circuit}}</h3>
+        </div>
+        <span> {{CircuitInfo.raceDate}} </span>
+    </div>
+    <img [src]="CircuitInfo.imgSectors" class="circuitSectorImg" alt="{{CircuitInfo.circuit}} picture with sectors ">
+    <article>
+        <div class="circuitDataWrapper">
+            <div class="circuitData">
+                <span class="titleData"> Circuit Length</span><span> {{CircuitInfo.long}} Km</span>
+            </div>
+            <div class="circuitData">
+                <span class="titleData"> Race laps </span><span> {{CircuitInfo.laps}}</span>
+            </div>
+            <div class="circuitData">
+                <span class="titleData"> Last pole </span><span> {{CircuitInfo.laps}}</span>
+            </div>
+            <div class="circuitData">
+                <span class="titleData"> Lap record </span><span> {{CircuitInfo.laps}}</span>
+            </div>
+            <div class="">
+                <span>Last Podium</span>
+            </div>
+        </div>
+    </article>
+</section>

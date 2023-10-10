@@ -3,5 +3,6 @@ export interface SelectedDriverInterface {
     driver_Img:string,
     driver_Id:string,
     driver_Points:number,
-    driver_Price: number
+    driver_Price: number,
+    driver_Team:string
 }

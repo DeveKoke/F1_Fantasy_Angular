@@ -5,6 +5,7 @@ export interface DriversInterface {
     driver_num:number,
     country:string,
     team:string,
+    teamCode:string,
     team_img:string,
     img:string,
     f1_champion:boolean,

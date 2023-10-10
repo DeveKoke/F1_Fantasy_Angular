@@ -70,6 +70,8 @@
     width: 100%;
     padding: 1rem 0;
     text-align: center;
+    border-radius: 12px;
+    letter-spacing: 1px;
 }
 .driverInfoCard{
     display: flex;
@@ -136,4 +138,45 @@
         list-style: none;
         text-decoration: none;
     }
+}
+.RBR{
+    background-color: rgb(43, 43, 102) ;
+    border: solid 3px rgb(221, 202, 2);
+
+}
+.FERR{
+    background-color: rgb(222, 23, 23);
+}
+.MRCDS{
+    background-color: rgb(10, 171, 157) ;
+}
+.ASMN{
+    background-color: rgb(4, 80, 71);
+    border: solid 3px rgb(255, 255, 255);
+
+}
+.McL{
+    background-color: rgb(206, 136, 6);
+}
+.ALPN{
+    background-color: rgb(82, 77, 249);
+    border: solid 3px rgb(255, 93, 252);
+
+}
+.ARomeo{
+    background-color: rgb(156, 20, 20) ;
+}
+.ATauri{
+    background-color: white;
+    color: rgb(7, 7, 122);
+    border: solid 3px rgb(7, 7, 122);
+
+}
+.Hass{
+    background-color: white;
+    color: black;
+    border: solid 3px red;
+}
+.Will{
+    background-color: rgb(127, 175, 253) ;
 }

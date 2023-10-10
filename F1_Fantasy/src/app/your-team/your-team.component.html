@@ -2,7 +2,7 @@
     <h1>YOUR TEAM</h1>
     <article>
         <div class="YTWrapper">
-            <div *ngFor="let driver of userTeam" class="driverResultCard">
+            <div *ngFor="let driver of userTeam" class="driverResultCard" [ngClass]="driver.driver_Team">
                 <img [src]="driver.driver_Img" alt="driver" width="130px">
                 <h3>{{driver.driver_Name}}</h3> 
             </div>

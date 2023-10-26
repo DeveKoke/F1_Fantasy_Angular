@@ -2,4 +2,36 @@
     color: red;
     letter-spacing: 3px;
     font-size: 5em;
+    margin: .3rem;
+}
+.sectionWelcomeTitle{
+    background: url('/assets/6299231.jpg'), linear-gradient(180deg, rgb(121, 114, 111) 0%, rgba(102, 97, 95, 0.8) 100%);
+    background-blend-mode: normal;
+    background-size: cover;
+    padding-bottom: 8rem;
+}
+.artWelcomeTitle{
+    padding-top: 8rem;
+}
+
+.welcomeContainer{
+    padding: 1rem 3rem;
+    background-color: rgba(112, 104, 104, 0.75) ;
+    margin: 0 auto 2rem;
+    width: 85%;
+    border-radius: 12px;
+    h3{
+        letter-spacing: 1.5px;
+    }
+}
+.welcomeTitle{
+
+
+}
+.fantasyInfoContainer{
+
+    img{
+        width: 45px;
+        margin-bottom: -.6em;
+    }
 }

@@ -1,10 +1,19 @@
+.topSectionTitle{
+    background-color:rgb(246, 241, 241);
+    color: black;
+    padding: 2.5rem 3rem;
+    padding-top: 8rem;
+    h1{
+        color: black;
+    }
+}
 .mapContainer{
-    width: 75%;
-    margin: auto;
+    width: 35%;
+    margin: 0 .8rem;
     height: 550px;
-    padding: 1.5em;
+    padding: 1em;
     background-color: rgb(179, 174, 174);
-    border-radius: 5px;
+    // border-radius: 5px;
 }
 #map { height: 100%; }
 .popupContent:hover{
@@ -14,14 +23,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     height:100px ;
-    margin: 1.5rem 0;
+    width: 75%;
+    margin: 1.5rem auto;
     img{
         width: 60px;
         transition: all 0.3s ease; 
+        padding: 0 .7rem;
     }
     img:hover{
-        background-color: white;
+        background-color:rgb(58, 56, 56);
         padding: 4px;
         width: 90px;
         border-radius: 12px;
@@ -29,7 +41,7 @@
     }
 }
 .circuitInfoContainer{
-    width: 90%;
+    width: 95%;
     margin: 2rem auto 1rem;
     display: flex;
     flex-direction: column;
@@ -64,6 +76,11 @@
         padding: .5rem 1.2rem;
     }
 }
+.circuitMapAndData{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
 .circuitDataWrapper{
     display: grid;
     grid-template-columns: (auto auto);
@@ -72,19 +89,73 @@
     margin: 3rem auto;
 }
 .circuitData{
+    display: flex;
+    flex-direction: column;
     font-size: 3rem;
     margin-left: 5rem;
     border-radius: 12px;
-    margin: 1.2rem 3rem;
+    margin: 1.2rem 1rem;
     width: 20rem;
     padding: .5rem 1.2rem;
+    color: black;
+    background-color: rgb(255, 255, 255) ;
+    border: solid rgb(179, 174, 174) ;
+    border-width: 0 4px 4px 0;
+    .titleDataB{
+        font-size: 1.1rem;
+        font-weight: 1px;
+    }
+}
+.titleData{
+    font-size: 1.7rem;
+}
+
+.podiumInfoContainer{
+    grid-column: 1/span 2;
     display: flex;
-    flex-direction: column;
+    flex-direction: column ;
     border: solid rgb(255, 255, 255);
     border-width: 0 4px 4px 0;
     border-radius: 12px;
-    .titleData{
-        font-size: 1.5rem;
+    font-size: 1.3rem;
+    padding: .5rem 1.2rem;
+    margin-top: 1.5em;
+}
+.podiumDriversContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.podiumDriverWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    img{
+        margin: 1rem 0;
+    }
+    span{
+        margin-bottom: 1rem;
     }
 }
+.winner{
+    background-color: rgb(250, 228, 106);
+    border-radius: 12px;
+    color: black;
+    margin: 1rem 0 2.9rem;
 
+}
+.second{
+    background-color: rgb(205, 197, 197);
+    border-radius: 12px;
+    color: black;
+    margin: 1rem 0;
+}
+.third{
+    background-color: rgb(199, 127, 105);
+    border-radius: 12px;
+    color: black;
+    margin: 1rem 0;
+}

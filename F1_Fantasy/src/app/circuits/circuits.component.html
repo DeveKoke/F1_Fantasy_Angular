@@ -1,14 +1,68 @@
-<section>
+<section class="topSectionTitle">
     <h1>CIRCUITS</h1>
     <h2>All you need to know about Formula 1 circuits 2023 championship</h2>
     <article class="shapeCircuitList">
         <img *ngFor="let shape of CircuitsData, let i = index" (click)="getCircuitInfo(i)" src="{{shape.shape}}" alt="link to {{shape.circuit}} information">
     </article>
-    <article class="mapContainer">
-        <div id="map"></div>
-    </article>
 </section>
-<section *ngIf="showCircuitInfo" class="circuitInfoContainer">
+
+
+
+
+<ng-template #CircuitDefault>
+    <section class="circuitInfoContainer">
+        <div class="circuitInfoTitleWrapper">
+            <img  [src]="CircuitsData[0].flag"  alt="{{CircuitsData[0].locationName}} flag ">
+            <div>
+                <h2 class="h2PopUp"> {{CircuitsData[0].locationName}} Grand Prix </h2>
+                <h3 >{{CircuitsData[0].circuit}}</h3>
+            </div>
+            <span> {{CircuitsData[0].raceDate}} </span>
+        </div>
+        <img [src]="CircuitsData[0].imgSectors" class="circuitSectorImg" alt="{{CircuitsData[0].circuit}} picture with sectors ">
+        <article>
+            <div class="circuitMapAndData">
+                <div class="circuitDataWrapper">
+                    <div class="circuitData">
+                        <span class="titleData"> Circuit Length</span><span> {{CircuitsData[0].long}} Km</span>
+                    </div>
+                    <div class="circuitData">
+                        <span class="titleData"> Race laps </span><span> {{CircuitsData[0].laps}}</span>
+                    </div>
+                    <div class="circuitData">
+                        <span class="titleData"> Last pole </span><span> {{CircuitsData[0].lastPoleTime}}</span><span class="titleDataB"> {{CircuitsData[0].lastPoleDriver}} </span>
+                    </div>
+                    <div class="circuitData">
+                        <span class="titleData"> Race lap record </span><span> {{CircuitsData[0].lapRecordTime}}</span><span class="titleDataB"> {{CircuitsData[0].lapRecordDriver}} </span>
+                    </div>
+                    <div class="podiumInfoContainer">
+                        <span class="titleData">Last Podium</span>
+                        <div class="podiumDriversContainer">
+                            <div class="podiumDriverWrapper second">
+                                <img src="{{CircuitsData[0].lastPodium.second}}" alt="">
+                                <span> {{CircuitsData[0].lastPodium.secondName}} </span>
+                            </div>
+                            <div class="podiumDriverWrapper winner">
+                                <img src="{{CircuitsData[0].lastPodium.winner}}" alt="">
+                                <span> {{CircuitsData[0].lastPodium.winnerName}} </span>
+                            </div>
+                            <div class="podiumDriverWrapper third">
+                                <img src="{{CircuitsData[0].lastPodium.third}}" alt="">
+                                <span> {{CircuitsData[0].lastPodium.thirdName}} </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <article class="mapContainer">
+                    <div id="map"></div>
+                </article>
+            </div>
+        </article>
+    </section>
+</ng-template>
+
+
+<section *ngIf="showCircuitInfo; else CircuitDefault" class="circuitInfoContainer">
     <div class="circuitInfoTitleWrapper">
         <img  [src]="CircuitInfo.flag"  alt="{{CircuitInfo.locationName}} flag ">
         <div>
@@ -19,22 +73,42 @@
     </div>
     <img [src]="CircuitInfo.imgSectors" class="circuitSectorImg" alt="{{CircuitInfo.circuit}} picture with sectors ">
     <article>
-        <div class="circuitDataWrapper">
-            <div class="circuitData">
-                <span class="titleData"> Circuit Length</span><span> {{CircuitInfo.long}} Km</span>
+        <div class="circuitMapAndData">
+            <div class="circuitDataWrapper">
+                <div class="circuitData">
+                    <span class="titleData"> Circuit Length</span><span> {{CircuitInfo.long}} Km</span>
+                </div>
+                <div class="circuitData">
+                    <span class="titleData"> Race laps </span><span> {{CircuitInfo.laps}}</span>
+                </div>
+                <div class="circuitData">
+                    <span class="titleData"> Last pole </span><span> {{CircuitInfo.lastPoleTime}}</span><span class="titleDataB"> {{CircuitInfo.lastPoleDriver}} </span>
+                </div>
+                <div class="circuitData">
+                    <span class="titleData"> Race lap record </span><span> {{CircuitInfo.lapRecordTime}}</span><span class="titleDataB"> {{CircuitInfo.lapRecordDriver}} </span>
+                </div>
+                <div class="podiumInfoContainer">
+                    <span class="titleData">Last Podium</span>
+                    <div class="podiumDriversContainer">
+                        <div class="podiumDriverWrapper second">
+                            <img src="{{CircuitInfo.lastPodium.second}}" alt="">
+                            <span> {{CircuitInfo.lastPodium.secondName}} </span>
+                        </div>
+                        <div class="podiumDriverWrapper winner">
+                            <img src="{{CircuitInfo.lastPodium.winner}}" alt="">
+                            <span> {{CircuitInfo.lastPodium.winnerName}} </span>
+                        </div>
+                        <div class="podiumDriverWrapper third">
+                            <img src="{{CircuitInfo.lastPodium.third}}" alt="">
+                            <span> {{CircuitInfo.lastPodium.thirdName}} </span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="circuitData">
-                <span class="titleData"> Race laps </span><span> {{CircuitInfo.laps}}</span>
-            </div>
-            <div class="circuitData">
-                <span class="titleData"> Last pole </span><span> {{CircuitInfo.laps}}</span>
-            </div>
-            <div class="circuitData">
-                <span class="titleData"> Lap record </span><span> {{CircuitInfo.laps}}</span>
-            </div>
-            <div class="">
-                <span>Last Podium</span>
-            </div>
+            <article class="mapContainer">
+                <div id="map"></div>
+            </article>
         </div>
     </article>
 </section>
+

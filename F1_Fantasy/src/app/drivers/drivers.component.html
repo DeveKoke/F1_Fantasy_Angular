@@ -1,19 +1,19 @@
-<section>
-    <h1>DRIVERS</h1>
-    <h3>Rules of the game</h3>
-    <p>Select 5 drivers to be part of your team. The best performance they do on the Grand Prix, the more points you will get. </p>
-    <ul class="gameRulesList">
-        <p>Points:</p>
-        <li>Race winner: 12 points.</li>
-        <li>2nd position on podium: 8 points.</li>
-        <li>3rd position on podium: 6 points.</li>
-        <li>First position on grid: 7 points.</li>
-        <li>Second position on grid: 4 points.</li>
-        <li>Fastest lap: 3 points.</li>
-        <li>Grand Slam: 5 points.</li>
-        <li>Hack trick: 3 points.</li>
-        <li>Any driver: 1 point per position gained or -1 per position lost at the end of the race according to their positions on grid. A DNF means -5 points.</li>
-    </ul>
+<section class="sectionRules">
+    <article class="rulesWrapper">
+        <h1 class="SectionTitle">Game rules</h1>
+        <p>Select 5 drivers to be part of your team for the whole season. The best performance they do on the Grand Prix weekend, the more points you will get. Points will be assigned as follow:</p>
+        <ul class="gameRulesList">
+            <li><b>Race winner: </b>12 points.</li>
+            <li><b>2nd position on podium:</b> 8 points.</li>
+            <li><b>3rd position on podium:</b> 6 points.</li>
+            <li><b>First position on grid:</b> 7 points.</li>
+            <li><b>Second position on grid:</b> 4 points.</li>
+            <li><b>Fastest lap:</b> 3 points.</li>
+            <li><b>Grand Slam:</b> 5 points.</li>
+            <li><b>Hack trick:</b> 3 points.</li>
+            <li><b>Any driver:</b> 1 point per position gained or -1 per position lost at the end of the race according to their positions on starting grid. A DNF means -5 points.</li>
+        </ul>        
+    </article>
 </section>
 <div class="sectionWrapper">
     <section class="selectedDriversContainer">
@@ -43,7 +43,7 @@
     </section>
     <section class="driversCardsContainer">
         <article *ngFor="let x of driversInfo, let i = index" class="driverInfoContainer">
-            <div class="driverInfo-Y " [ngClass]="x.teamCode" >
+            <div class="driverInfo-Y " [ngClass]="x.teamCode"  >
                 <div (click)="toggleDriverInfo(i)" class="driverInfoCard">
                     <img [src]="x.img" width="110px">
                     <div class="numberCountryContainer">
@@ -58,13 +58,13 @@
                         <img [src]="x.team_img" alt="" width="60px">
                     </div>
                     <h3>{{x.price}} mill. € </h3>
-                    <button (click)="selectDriver(i)" >SELECT DRIVER</button>
+                    <h3 class="checkResults " (click)="selectDriver(i)" >SELECT DRIVER</h3>
                 </div>
                 <div *ngIf="showDriverInfo[i]" class="driverInfoToggled" >
-                    <li *ngIf="x.championships>0" >Championsips: {{x.championships}} </li>
-                    <li *ngIf="x.GP_victories>0">GP Victories: {{x.GP_victories}} </li>
-                    <li *ngIf="x.podiums>0">Podiums:  {{x.podiums}} </li>
-                    <li *ngIf="x.poles>0">Poles:  {{x.poles}} </li>
+                        <li *ngIf="x.championships>0" >Championsips: {{x.championships}} </li>
+                        <li *ngIf="x.GP_victories>0">GP Victories: {{x.GP_victories}} </li>
+                        <li *ngIf="x.podiums>0">Podiums:  {{x.podiums}} </li>
+                        <li *ngIf="x.poles>0">Poles:  {{x.poles}} </li>
                 </div>
             </div>
         </article>

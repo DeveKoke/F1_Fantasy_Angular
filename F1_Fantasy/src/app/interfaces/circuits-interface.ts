@@ -7,13 +7,18 @@ export interface CircuitInterface {
     raceDate:string;
     long: number;
     laps: number;
-    // lastPole: string;
-    // lapRecord: string;
-    // lastPodium: {
-    //     winner: string;
-    //     second: string;
-    //     third: string;
-    // }
+    lastPoleTime: string;
+    lastPoleDriver: string;
+    lapRecordTime: string;
+    lapRecordDriver: string;
+    lastPodium: {
+        winner: string;
+        winnerName: string;
+        second: string;
+        secondName: string;
+        third: string;
+        thirdName:string;
+    }
     location: {
         lat:number;
         lng:number;

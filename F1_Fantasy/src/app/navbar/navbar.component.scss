@@ -2,18 +2,26 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-height: 4em;
+    min-height: 2.7em;
+    width: 97%;
+    margin-top: .5rem;
+    margin-left: 1.5%;
     align-items: center;
     background-color: white ;
-    font-size: 1.5em;
+    font-size: 1.6em;
+    position: absolute ;
+    position: fixed;
+    border-radius: 15px;
+    z-index: 99999;
 }
 .routingWrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 40%;
+    width: 100%;
     span:hover{
         cursor: pointer;
         color: red  ;
+
     }
 }

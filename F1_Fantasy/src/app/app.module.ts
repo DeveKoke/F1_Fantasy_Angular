@@ -18,6 +18,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { DriversServiceService } from './services/drivers-service.service';
 import { ResultsService } from './services/results.service';
 import { TeamService } from './services/team.service';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TeamService } from './services/team.service';
     CircuitsComponent,
     YourTeamComponent,
     ResultsComponent,
-    MainComponent
+    MainComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

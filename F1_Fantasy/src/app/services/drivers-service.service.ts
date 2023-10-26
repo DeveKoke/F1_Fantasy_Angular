@@ -19,9 +19,9 @@ export class DriversServiceService {
     img: 'assets/VER.png',
     f1_champion: true,
     championships:2,
-    GP_victories:48,
-    podiums:92,
-    poles:29
+    GP_victories:53,
+    podiums:97,
+    poles:32
   }
   Perez:DriversInterface = {
     price: 6,
@@ -51,7 +51,7 @@ export class DriversServiceService {
     f1_champion: false,
     GP_victories:5,
     podiums:27,
-    poles:20
+    poles:21
   }
   Sainz:DriversInterface = {
     price: 6,
@@ -65,7 +65,7 @@ export class DriversServiceService {
     img: 'assets/SAI.png',
     f1_champion: false,
     GP_victories:2,
-    podiums:17,
+    podiums:18,
     poles:5
   }
   Hamilton:DriversInterface = {
@@ -82,7 +82,7 @@ export class DriversServiceService {
     championships:7,
     GP_victories:103,
     podiums:196,
-    poles:103
+    poles:104
   }
   Russell:DriversInterface = {
     price: 6,
@@ -168,7 +168,7 @@ export class DriversServiceService {
     team_img: 'assets/mclaren-logo.png',
     img: 'assets/NOR.png',
     f1_champion: false,
-    podiums:10,
+    podiums:12,
     poles:1
   }
   Piastri:DriversInterface = {
@@ -182,7 +182,7 @@ export class DriversServiceService {
     team_img: 'assets/mclaren-logo.png',
     img: 'assets/PIA.png',
     f1_champion: false,
-    podiums:1,
+    podiums:2,
   }
   Zhou:DriversInterface = {
     price: 2,

@@ -1,7 +1,8 @@
 <section class="yourTeamMainSection">
-    <h1>YOUR TEAM</h1>
+    <h1 class="h1YourTeam">YOUR TEAM</h1>
     <article>
-        <div class="YTWrapper">
+        <div [ngClass]="{'YTWrapperFull': userTeam.length > 0}">
+                <h3 *ngIf="userTeam.length === 0"  class="selectTeamMessage">You need to select your team first. <br> <a [routerLink]="['/drivers']">Click here to start.</a></h3>
             <div *ngFor="let driver of userTeam" class="driverResultCard" [ngClass]="driver.driver_Team">
                 <img [src]="driver.driver_Img" alt="driver" width="130px">
                 <h3>{{driver.driver_Name}}</h3> 
@@ -12,16 +13,17 @@
         <div class="titleResultsCard">
             <img [src]="GPData.GP_Flag" alt="country flag" class="countryFlag">
             <h2>{{GPData.GP_Name}}</h2>
-            <button (click)="toggleResults(i)" > check results</button>
+            <!-- <button (click)="toggleResults(i)" > check results</button> -->
+            <h3 (click)="toggleResults(i)" class="checkResults">Check Results</h3>
         </div>
-            <div *ngIf="showGPResults[i]" class="driversResultsContainer">
+        <div *ngIf="showGPResults[i]" class="driversResultsContainer">
+                <h3 class="totalPointsTitle">Total points: {{userTotalGPPoints}} </h3>
                 <div class="driversResultsCardsWrapper">
                     <div *ngFor="let driver of userTeam" class="driverResultCard">
                         <img [src]="driver.driver_Img" alt="driver" width="100px">
                         <h4>{{driver.driver_Points}} points</h4>
                     </div>
                 </div>
-                <h3>Total points: {{userTotalGPPoints}} </h3>
             </div>
     </article>
 </section>

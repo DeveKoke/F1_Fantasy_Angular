@@ -16,6 +16,18 @@ export class CircuitService{
         raceDate: '3 - 5 March',
         long: 5.412,
         laps: 57,
+        lastPoleTime: '1:29.897',
+        lastPoleDriver: 'Max Verstappen',
+        lapRecordTime: '1:31.447',
+        lapRecordDriver: 'Pedro de la Rosa (2005)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/PER.png',
+            secondName: 'Sergio Perez',
+            third: 'assets/ALO.png',
+            thirdName: 'Fernando Alonso'
+            },
         location: {
             lat:26.032141604051507, lng:50.510805636867545}},
     {
@@ -27,6 +39,18 @@ export class CircuitService{
         raceDate: '17 - 19 March',
         long: 6174,
         laps: 50,
+        lastPoleTime: '1:28.265',
+        lastPoleDriver: 'Sergio Perez',
+        lapRecordTime: '1:30.734',
+        lapRecordDriver: 'Lewis Hamilton (2021)',
+        lastPodium: {
+            winner: 'assets/PER.png',
+            winnerName: 'Sergio Perez',
+            second: 'assets/VER.png',
+            secondName: 'Max Verstappen',
+            third: 'assets/ALO.png',
+            thirdName: 'Fernando Alonso'
+            },
         location: {
             lat:21.632304501844704, lng:39.10439163797429}},
     {
@@ -38,6 +62,18 @@ export class CircuitService{
         raceDate: '31 - 2 April',
         long: 5278,
         laps: 58,
+        lastPoleTime: '1:16.732',
+        lastPoleDriver: 'Max Verstappen',
+        lapRecordTime: '1:20.235',
+        lapRecordDriver: 'Sergio Perez (2023)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/HAM.png',
+            secondName: 'Lewis Hamilton',
+            third: 'assets/ALO.png',
+            thirdName: 'Fernando Alonso'
+            },
         location: {
             lat:-37.84987609444263, lng:144.968998737776}},
     {
@@ -49,6 +85,18 @@ export class CircuitService{
         raceDate: '28 - 30 April',
         long: 6003,
         laps: 51,
+        lastPoleTime: '1:40.203',
+        lastPoleDriver: 'Charles Leclerc',
+        lapRecordTime: '1:43.009',
+        lapRecordDriver: 'Charles Leclerc (2019)',
+        lastPodium: {
+            winner: 'assets/PER.png',
+            winnerName: 'Sergio Perez',
+            second: 'assets/VER.png',
+            secondName: 'Max Verstappen',
+            third: 'assets/LEC.png',
+            thirdName: 'Charles Leclerc'
+            },
         location: {
             lat:40.373771847021665, lng: 49.85352841533236}},
     {
@@ -60,10 +108,22 @@ export class CircuitService{
         raceDate: '5 - 7 May',
         long: 5412,
         laps: 57,
+        lastPoleTime: '1:26.841',
+        lastPoleDriver: 'Sergio Perez',
+        lapRecordTime: '1:29.708 Max',
+        lapRecordDriver: 'Max Verstappen (2023)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/PER.png',
+            secondName: 'Sergio Perez',
+            third: 'assets/ALO.png',
+            thirdName: 'Fernando Alonso'
+            },
         location: {
             lat:25.957675, lng:-80.234424}},
             {
-                circuit:'Autodromo Enzo e Dino Ferrari', 
+        circuit:'Autodromo Enzo e Dino Ferrari', 
         locationName: 'Emilia Romagna',
         flag: 'assets/Flags/Itali Flag.svg',
         shape:'assets/Circuits/EMI (Stroke).svg',
@@ -71,6 +131,18 @@ export class CircuitService{
         raceDate: '19 - 21 May',
         long: 4909,
         laps: 63,
+        lastPoleTime: '1:11.365',
+        lastPoleDriver: 'Max Verstappen',
+        lapRecordTime: '1:15.484',
+        lapRecordDriver: 'Lewis Hamilton (2020)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/PER.png',
+            secondName: 'Sergio Perez',
+            third: 'assets/NOR.png',
+            thirdName: 'Lando Norris'
+            },
         location: {
             lat:44.34512288130726, lng:11.715787317959505}},
     {
@@ -82,6 +154,18 @@ export class CircuitService{
         raceDate: '26 - 28 May',
         long: 3337,
         laps: 78,
+        lastPoleTime: '1:11.365',
+        lastPoleDriver: 'Max Verstappen',
+        lapRecordTime: '1:12.909',
+        lapRecordDriver: ' Lewis Hamilton (2021)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/ALO.png',
+            secondName: 'Fernando Alonso',
+            third: 'assets/OCO.png',
+            thirdName: 'Esteban Ocon'
+            },
         location: {
             lat:43.734243620655086, lng:7.421681859987206,}},
     {
@@ -93,6 +177,18 @@ export class CircuitService{
         raceDate: '2 - 4 June',
         long: 4657,
         laps: 66,
+        lastPoleTime: '1:12.272',
+        lastPoleDriver: 'Max Verstappen',
+        lapRecordTime: '1:16.330 ',
+        lapRecordDriver: 'Max Verstappen (2023)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/HAM.png',
+            secondName: 'Lewis Hamilton',
+            third: 'assets/RUS.png',
+            thirdName: 'George Russell'
+            },
         location: {
             lat:41.56865223638348, lng: 2.257311924225883}},
     {
@@ -104,6 +200,18 @@ export class CircuitService{
         raceDate: '16 - 18 June',
         long: 4361,
         laps: 70,
+        lastPoleTime: '1:25.858',
+        lastPoleDriver: 'Max Verstappen',
+        lapRecordTime: '1:13.078',
+        lapRecordDriver: 'Valtteri Bottas (2019)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/ALO.png',
+            secondName: 'Fernando Alonso',
+            third: 'assets/HAM.png',
+            thirdName: 'Lewis Hamilton'
+            },
         location: {
             lat:45.50190697860013,  lng:-73.52791596888379}},
     {
@@ -115,6 +223,18 @@ export class CircuitService{
         raceDate: '30 - 2 July',
         long: 4318,
         laps: 71,
+        lastPoleTime: '1:04.391',
+        lastPoleDriver: 'Max Verstappen',
+        lapRecordTime: '1:05.619',
+        lapRecordDriver: 'Carlos Sainz (2020)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/LEC.png',
+            secondName: 'Charles Leclerc',
+            third: 'assets/PER.png',
+            thirdName: 'Sergio Perez'
+            },
         location: {
             lat:47.21979953540738, lng:14.76511309578712}},
     {
@@ -126,6 +246,18 @@ export class CircuitService{
         raceDate: '7 - 9 July',
         long: 5891,
         laps: 52,
+        lastPoleTime: '1:26.720',
+        lastPoleDriver: 'Max Verstappen',
+        lapRecordTime: '1:27.097',
+        lapRecordDriver: 'Max Verstappen (2020)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/NOR.png',
+            secondName: 'Lando Norris',
+            third: 'assets/HAM.png',
+            thirdName: 'Lewis Hamilton'
+            },
         location: {
             lat:52.06958401263113, lng:-1.021549074994194}},
     {
@@ -137,6 +269,18 @@ export class CircuitService{
         raceDate: '21 - 23 July',
         long: 4381,
         laps: 70,
+        lastPoleTime: '1:16.609',
+        lastPoleDriver: 'Lewis Hamilton',
+        lapRecordTime: '1:16.627',
+        lapRecordDriver: 'Lewis Hamilton (2020)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/NOR.png',
+            secondName: 'Lando Norris',
+            third: 'assets/PER.png',
+            thirdName: 'Sergio Perez'
+            },
         location: {
             lat:47.58001966719395, lng:19.247308495813947,}},
     {
@@ -148,6 +292,18 @@ export class CircuitService{
         raceDate: '28 - 30 July',
         long: 7004,
         laps: 44,
+        lastPoleTime: '1:46.988',
+        lastPoleDriver: 'Charles Leclerc',
+        lapRecordTime: '1:46.286',
+        lapRecordDriver: 'Bottas (2018)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/PER.png',
+            secondName: 'Sergio Perez',
+            third: 'assets/LEC.png',
+            thirdName: 'Charles Leclerc'
+            },
         location: {
             lat:50.44457302724075, lng: 5.965343096973329}},
     {
@@ -159,6 +315,18 @@ export class CircuitService{
         raceDate: '25 - 27 August',
         long: 4259,
         laps: 72,
+        lastPoleTime: '1:10.567',
+        lastPoleDriver: 'Max Verstappen',
+        lapRecordTime: '1:11.097',
+        lapRecordDriver: 'Lewis Hamilton (2021)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/ALO.png',
+            secondName: 'Fernando Alonso',
+            third: 'assets/GAS.png',
+            thirdName: 'Pierre Gasly'
+            },
         location: {
             lat:52.388876832590086,  lng:4.541480786052193,}},
     {
@@ -170,6 +338,18 @@ export class CircuitService{
         raceDate: '1 - 3 September',
         long: 5793,
         laps: 53,
+        lastPoleTime: '1:20.294',
+        lastPoleDriver: 'Carlos Sainz',
+        lapRecordTime: '1:21.046',
+        lapRecordDriver: 'Rubens Barrichello (2004)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/PER.png',
+            secondName: 'Sergio Perez',
+            third: 'assets/SAI.png',
+            thirdName: 'Carlos Sainz'
+            },
         location:{
             lat: 45.61758018965837, lng:9.281442637997559}},
     {
@@ -181,8 +361,20 @@ export class CircuitService{
         raceDate: '15 - 17 September',
         long: 4940,
         laps: 62,
+        lastPoleTime: '1:30.984',
+        lastPoleDriver: 'Carlos Sainz',
+        lapRecordTime: '1:35.867 ',
+        lapRecordDriver: 'Lewis Hamilton (2023)',
+        lastPodium: {
+            winner: 'assets/SAI.png',
+            winnerName: 'Carlos Sainz',
+            second: 'assets/NOR.png',
+            secondName: 'Lando Norris',
+            third: 'assets/HAM.png',
+            thirdName: 'Lewis Hamilton'
+            },
         location: {
-            lat:5.5892957375404215, lng:104.2154734203962}},
+            lat:1.291678599241, lng:103.8639311517}},
     {
         circuit:'Suzuka Circuit', 
         locationName: 'Japanese',
@@ -192,6 +384,18 @@ export class CircuitService{
         raceDate: '22 - 24 September',
         long: 5807,
         laps: 53,
+        lastPoleTime: '1:28.877',
+        lastPoleDriver: 'Max Verstappen',
+        lapRecordTime: '1:30.983',
+        lapRecordDriver: 'Lewis Hamilton (2019)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/NOR.png',
+            secondName: 'Lando Norris',
+            third: 'assets/PIA.png',
+            thirdName: 'Oscar Piastri'
+            },
         location: {
             lat:34.845708129694465, lng:136.53882948055275}},
     {
@@ -203,6 +407,18 @@ export class CircuitService{
         raceDate: '6 - 8  October',
         long: 5419,
         laps: 57,
+        lastPoleTime: '1:23.778',
+        lastPoleDriver: 'Max Verstappen',
+        lapRecordTime: '1:24.319',
+        lapRecordDriver: 'Max Verstappen (2023)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/PIA.png',
+            secondName: 'Oscar Piastri',
+            third: 'assets/NOR.png',
+            thirdName: 'Lando Norris'
+            },
         location: {
             lat:25.488681960924566, lng:51.45055017663813}},
     {
@@ -214,6 +430,18 @@ export class CircuitService{
         raceDate: '20 - 22 October',
         long: 5513,
         laps: 56,
+        lastPoleTime: '1:34.356',
+        lastPoleDriver: 'Carlos Sainz',
+        lapRecordTime: '1:36.169 ',
+        lapRecordDriver: 'Charles Leclerc (2019)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/NOR.png',
+            secondName: 'Lando Norris',
+            third: 'assets/SAI.png',
+            thirdName: 'Carlos Sainz'
+            },
         location: {
             lat:30.132620711972624, lng: -97.63913275396517}},
     {
@@ -225,6 +453,18 @@ export class CircuitService{
         raceDate: '27 - 29 October',
         long: 4304,
         laps: 71,
+        lastPoleTime: '1:17.775',
+        lastPoleDriver: 'Max Verstappen',
+        lapRecordTime: '1:17.774 ',
+        lapRecordDriver: 'Valtteri Bottas (2021)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/HAM.png',
+            secondName: 'Lewis Hamilton',
+            third: 'assets/PER.png',
+            thirdName: 'Sergio Perez'
+            },
         location: {
             lat:19.406047588050207,  lng:-99.09237461787923}},
 
@@ -237,6 +477,18 @@ export class CircuitService{
         raceDate: '3 - 5 November',
         long: 4039,
         laps: 71,
+        lastPoleTime: '1:11.674',
+        lastPoleDriver: 'Kevin Magnusen',
+        lapRecordTime: '1:10.540',
+        lapRecordDriver: 'Valtteri Bottas (2018)',
+        lastPodium: {
+            winner: 'assets/RUS.png',
+            winnerName: 'George Russell',
+            second: 'assets/HAM.png',
+            secondName: 'Lewis Hamilton',
+            third: 'assets/SAI.png',
+            thirdName: 'Carlos Sainz'
+            },
         location: {
             lat:-23.70442965834506, lng:-46.6992182630323}},
     {
@@ -248,6 +500,18 @@ export class CircuitService{
         raceDate: '16 - 18 November',
         long: 6201,
         laps: 50,
+        lastPoleTime: 'No race yet',
+        lastPoleDriver: '',
+        lapRecordTime: 'No race yet',
+        lapRecordDriver: 'No race yet',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: '',
+            secondName: '',
+            third: '',
+            thirdName: ''
+            },
         location: {
             lat:36.114608, lng: -115.168698}},
     {
@@ -259,6 +523,18 @@ export class CircuitService{
         raceDate: '24 - 26 November',
         long: 5281,
         laps: 58,
+        lastPoleTime: '1:23.824',
+        lastPoleDriver: 'Max Verstappen',
+        lapRecordTime: '1:26.103 ',
+        lapRecordDriver: 'Max Verstappen (2021)',
+        lastPodium: {
+            winner: 'assets/VER.png',
+            winnerName: 'Max Verstappen',
+            second: 'assets/LEC.png',
+            secondName: 'Charles Leclerc',
+            third: 'assets/PER.png',
+            thirdName: 'Sergio Perez'
+            },
         location: {
             lat:24.472681512293555, lng:54.60496853680377}},
         ]

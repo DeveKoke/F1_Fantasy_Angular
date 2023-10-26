@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DriversServiceService } from 'src/app/services/drivers-service.service';
 import { TeamService } from '../services/team.service';
 import { SelectedDriverInterface } from '../interfaces/selectedDriver-interface';
+
 
 @Component({
   selector: 'app-drivers',
@@ -10,7 +11,16 @@ import { SelectedDriverInterface } from '../interfaces/selectedDriver-interface'
 })
 export class DriversComponent {
 
-  constructor(private driversCollection:DriversServiceService, private team:TeamService){ }
+  constructor(private driversCollection:DriversServiceService, private team:TeamService){  }
+
+  userTeam:SelectedDriverInterface[] = this.team.getPickedDrivers();
+  ngOnInit() {
+     
+    if (this.userTeam.length > 0) {
+      this.pickedDrivers = this.userTeam
+    }
+  }
+  
   
   // Show drivers' info
   driversInfo:any[] = this.driversCollection.drivers;
@@ -18,10 +28,12 @@ export class DriversComponent {
   toggleDriverInfo(index: number):void {
     this.showDriverInfo[index] = !this.showDriverInfo[index];
   }
-  driverCardClass:string = ''
+  driverCardClass:string = '';
+
+
 
   //Drivers price
-  budget:number = 25;
+  budget:number = 25; 
   setbudget(value: number) {
     this.budget = value;
   }
@@ -147,6 +159,8 @@ export class DriversComponent {
         }
 
       this.newDrivers.splice(indexDriver, 1);
+
+
       
       let chosenDriversPrice:number = 0;
       let budgetLeft:number;

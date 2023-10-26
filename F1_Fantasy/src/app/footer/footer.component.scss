@@ -1,0 +1,70 @@
+footer{
+    padding: 1em 3em;
+    color: white;
+    background-color: rgb(208, 25, 25);
+    h2{
+        margin-bottom: .4em;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:visited{
+        text-decoration: none;
+        color: white;
+    }
+}
+.mainFooterContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: solid white;
+    border-width: 3px 0 3px 0;
+    border-radius: 12px;
+    width: 70%;
+    padding: 1em;
+    margin: 1em auto;
+    li{
+        list-style: none;
+        width: fit-content;
+        padding: .9em 0 .3em;
+        margin: .1em 0;
+        font-size: 1.15em;
+    }
+    li:hover{
+       border: solid rgb(245, 245, 245);
+       border-width: 0 0 4px 0;
+       cursor: pointer;
+    }
+
+}
+.authorFooterContainer{
+    width: 70%;       
+    margin: 1em auto;
+    h4 {
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    
+    li{
+        list-style: none;
+        width: fit-content;
+        padding: .9em 0 .3em;
+        margin: .1em 0;
+        font-size: 1.15em;
+    }
+    li:hover{
+       border: solid white;
+       border-width: 0 0 4px 0;
+       cursor: pointer;
+    }
+
+}
+.signWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.officialLink:hover{
+    cursor: pointer;
+}

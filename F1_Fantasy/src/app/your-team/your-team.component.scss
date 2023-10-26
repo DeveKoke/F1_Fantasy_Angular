@@ -1,12 +1,18 @@
 .yourTeamMainSection{
-
+    padding-top: 8rem;
+}
+.special-background{
+    background-color: rgb(241, 234, 234);
+}
+.h1YourTeam{
+    padding-left: 3rem;
 }
 .resultsCardContainer{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgb(93, 85, 85);
+    background-color: rgb(106, 98, 98);
     border-radius: 12px;
     padding: .6em;
     margin: 0 auto 1em;
@@ -25,7 +31,7 @@
 .titleResultsCard{
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 63%;
     justify-content: space-around;
     align-items: center;
 }
@@ -34,21 +40,25 @@
     flex-direction: column;
     color: white;
     margin-top: 1em;
+    min-width: 10rem;
     // background-color:  rgb(112, 104, 104) ;
     // border-radius: 0 0 12px 12px;
 }
-.YTWrapper{
+.YTWrapperFull{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    height: 30rem;
+    height: 15rem;
     border-radius: 12px;
-    width: 50%;
-    padding: .5em 0;
+    width: 95%;
+
     margin: 0 auto 1rem;
-    background-color:  rgb(179, 174, 174);
+    // background-color:  rgb(179, 174, 174);
+}
+.YTWrapperFull{
+    padding: 3rem 0;
 }
 .driversResultsCardsWrapper{
     display: flex;
@@ -64,4 +74,65 @@
     border-radius: 12px;
     min-width: 11em;
     min-height: 13rem;
+}
+.selectTeamMessage{
+    background-color: rgb(208, 25, 25);
+    border-radius: 12px;
+    padding: .5rem 1rem;
+    font-size: 1.6em;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+}
+.checkResults{
+    background-color: white;
+    color: black;
+    padding: .7rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+.checkResults:hover {
+    color: #b2aaaa;
+    background: transparent;
+     box-shadow:none;
+     cursor: pointer;
+    }
+    .checkResults:before,
+    .checkResults:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #ffffff;
+    box-shadow:
+     -1px -1px 5px 0px #fff,
+     7px 7px 20px 0px #0003,
+     4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+    }
+    .checkResults:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+    }
+    .checkResults:hover:before,
+    .checkResults:hover:after{
+    width:100%;
+    transition:800ms ease all;
+    }
+.totalPointsTitle{
+    width: 30%;
+    font-size: 2em;
+    margin: auto;
 }

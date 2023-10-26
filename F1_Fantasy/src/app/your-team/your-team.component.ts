@@ -10,10 +10,11 @@ import { GPDataResults } from '../interfaces/results-interface';
   templateUrl: './your-team.component.html',
   styleUrls: ['./your-team.component.scss']
 })
-export class YourTeamComponent {
+export class YourTeamComponent{
 
   constructor(private team:TeamService, private results:ResultsService){}
 
+  
   GPDataResults:GPDataResults[] = this.results.GPDataResults;
   userTeam:SelectedDriverInterface[] = this.team.getPickedDrivers();
   userTotalGPPoints:number = this.results.userGPPoints;

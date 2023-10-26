@@ -183,32 +183,4 @@ export class DriversComponent {
     } 
   }
 
-  // SAVE AND SEND SELECTED DRIVERS TO FIREBASE.
-  // async saveTeam() {
-  //   const userTeam: TeamInterface = {
-  //     driver1: 'hola',
-  //     driver2: 'hola',
-  //     driver3: 'hola',
-  //     driver4: 'hola',
-  //     driver5: 'hola'
-  //   };
-  
-  //   for (let index = 0; index < this.pickedDrivers.length; index++) {
-  //     const driverName = this.pickedDrivers[index].driver_Name;
-  //     if (index === 0) {
-  //       userTeam.driver1 = driverName;
-  //     } else if (index === 1) {
-  //       userTeam.driver2 = driverName;
-  //     } else if (index === 2) {
-  //       userTeam.driver3 = driverName;
-  //     } else if (index === 3) {
-  //       userTeam.driver4 = driverName;
-  //     } else if (index === 4) {
-  //       userTeam.driver5 = driverName;
-  //     }
-  //   }
-  
-  //   const response = await this.team.addTeam(userTeam);
-  //   console.log(response);
-  // }
 }

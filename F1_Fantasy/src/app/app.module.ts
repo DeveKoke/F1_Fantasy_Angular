@@ -10,10 +10,7 @@ import { CircuitsComponent } from './circuits/circuits.component';
 import { YourTeamComponent } from './your-team/your-team.component';
 import { ResultsComponent } from './results/results.component';
 import { MainComponent } from './main/main.component';
-// DATABASE MODULES
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
-import { environment } from '../environments/environment';
-import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+
 // SERVICES
 import { DriversServiceService } from './services/drivers-service.service';
 import { ResultsService } from './services/results.service';
@@ -34,8 +31,6 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideFirestore(() => getFirestore())
   ],
   providers: [DriversServiceService, ResultsService, TeamService],
   bootstrap: [AppComponent]
